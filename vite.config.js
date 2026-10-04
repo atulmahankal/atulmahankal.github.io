@@ -8,7 +8,7 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-const baseURL = "/atulmahankal"
+const baseURL = "/"
 const names = [
   '/',
   '/aboutme',
@@ -26,7 +26,7 @@ export default defineConfig({
   plugins: [
     react(),
     Sitemap({
-      hostname: 'https://atulmahankal.github.io/atulmahankal',
+      hostname: 'https://atulmahankal.github.io/',
       dynamicRoutes,              // only include these
       outDir: 'dist',             // sitemap in dist
       readable: true,             // pretty format (optional)
